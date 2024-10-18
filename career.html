@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acebest Careers - Join our Team">
+    <title>Acebest - Careers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .sidebar {
+            border-right: 1px solid #ccc;
+            height: 100%;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .job-title {
+            cursor: pointer;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        /* Highlight the active job title */
+        .job-title.active {
+            background-color: #f8f9fa;
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            color: #007bff;
+        }
+        .benefits {
+            margin-top: 20px;
+        }
+        .benefits h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .benefits ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Acebest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#career">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Career Section with Sidebar -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar with Job Titles -->
+            <div class="col-md-3 sidebar">
+                <h2>Open Positions</h2>
+                <div id="job-gis-engineer" class="job-title active" onclick="showDescription('gis-engineer')">GIS Engineer</div>
+                <div id="job-cloud-engineer" class="job-title" onclick="showDescription('cloud-engineer')">Cloud Engineer</div>
+                <div id="job-sales-executive" class="job-title" onclick="showDescription('sales-executive')">Sales Executive</div>
+                <div id="job-product-manager" class="job-title" onclick="showDescription('product-manager')">Product Manager</div>
+            </div>
+
+            <!-- Content Area for Job Descriptions -->
+            <div class="col-md-9 content">
+                <div id="description-gis-engineer">
+                    <h3>GIS Engineer</h3>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Design, develop, and implement geospatial solutions and enterprise GIS systems.</li>
+                        <li>Work closely with the development team to integrate GIS applications into cloud platforms.</li>
+                        <li>Monitor and manage GIS data pipelines and systems performance.</li>
+                        <li>Provide advanced mapping and spatial analysis support for various teams.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>Bachelor’s degree in Geography, Computer Science, or a related field.</li>
+                        <li>5+ years of experience with GIS technologies (e.g., ArcGIS, QGIS).</li>
+                        <li>Experience in deploying GIS applications on cloud infrastructure (AWS, Azure).</li>
+                        <li>Strong programming skills (Python, Java, SQL).</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Health insurance (medical, dental, vision).</li>
+                            <li>401(k) retirement plan with company match.</li>
+                            <li>Paid time off (20+ days of vacation, sick leave).</li>
+                            <li>Remote work opportunities and flexible hours.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="description-cloud-engineer" style="display: none;">
+                    <h3>Cloud Engineer</h3>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Design, implement, and manage cloud-based infrastructure for geospatial data storage.</li>
+                        <li>Collaborate with development teams to ensure secure and scalable cloud environments.</li>
+                        <li>Develop tools for automated cloud deployment and troubleshooting issues.</li>
+                        <li>Ensure compliance with security standards and best practices.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>Bachelor’s degree in Computer Science or related field.</li>
+                        <li>3+ years of experience with cloud platforms (AWS, Azure, GCP).</li>
+                        <li>Strong expertise in cloud services such as Kubernetes, Docker, and Terraform.</li>
+                        <li>Experience in SysOps and CI/CD pipeline implementation.</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Comprehensive health insurance package.</li>
+                            <li>Retirement plan with generous employer matching.</li>
+                            <li>Paid time off (vacation, sick leave, holidays).</li>
+                            <li>Professional development and certification reimbursement.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="description-sales-executive" style="display: none;">
+                    <h3>Sales Executive</h3>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Identify and develop new clients for cloud GIS solutions.</li>
+                        <li>Maintain relationships with key accounts and drive business growth.</li>
+                        <li>Collaborate with the marketing team to deliver compelling product presentations.</li>
+                        <li>Achieve sales targets and provide forecasts and pipeline updates.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>5+ years of experience in software or cloud sales.</li>
+                        <li>Strong track record of achieving sales quotas in cloud or SaaS environments.</li>
+                        <li>Excellent communication and negotiation skills.</li>
+                        <li>Knowledge of GIS solutions and cloud platforms is a plus.</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Base salary plus commission and performance bonuses.</li>
+                            <li>Health insurance and 401(k) retirement plan.</li>
+                            <li>Flexible work hours and remote work options.</li>
+                            <li>Professional development opportunities.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="description-product-manager" style="display: none;">
+                    <h3>Product Manager</h3>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Develop and manage the product roadmap for cloud GIS solutions.</li>
+                        <li>Collaborate with engineering, sales, and marketing teams to ensure successful product launches.</li>
+                        <li>Analyze customer feedback and market trends to guide product strategy.</li>
+                        <li>Drive innovation in GIS-based solutions to meet market demand.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong></p>
+                    <ul>
+                        <li>3+ years of experience in product management, ideally in SaaS or GIS solutions.</li>
+                        <li>Strong leadership and project management skills.</li>
+                        <li>Proficiency in data analysis and product lifecycle management tools.</li>
+                        <li>Experience in cloud platforms and GIS technologies is a plus.</li>
+                    </ul>
+                    <div class="benefits">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Comprehensive health coverage and retirement benefits.</li>
+                            <li>Paid time off (vacation, sick days, holidays).</li>
+                            <li>Opportunities for leadership training and career advancement.</li>
+                            <li>Remote work and flexible scheduling options.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function showDescription(job) {
+            // Remove active class from all job titles
+            document.querySelectorAll('.job-title').forEach(title => {
+                title.classList.remove('active');
+            });
+
+            // Hide all job descriptions
+            document.querySelectorAll('.content > div').forEach(description => {
+                description.style.display = 'none';
+            });
+
+            // Add active class to clicked job title
+            document.getElementById('job-' + job).classList.add('active');
+
+            // Show the relevant job description
+            document.getElementById('description-' + job).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
